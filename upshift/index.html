@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#11121c" />
+  <meta name="description" content="Карьерный рост для молодых специалистов Казахстана: оценка зарплатного потенциала, сильное резюме, подбор вакансий, подготовка к интервью и переговоры о зарплате." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="UPSHIFT — ты уже вырос. А зарплата?" />
+  <meta property="og:description" content="Помогаем молодым специалистам Казахстана выйти на новый карьерный уровень. Начни с бесплатной диагностики." />
+  <title>UPSHIFT — карьерный рост и повышение зарплаты в Казахстане</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root { --ink:#141521; --muted:#646777; --line:#e9e8ed; --paper:#faf9f7; --white:#fff; --violet:#6657e9; --violet-dark:#4a3bd2; --lime:#dafa85; --dark:#151521; --shadow: 0 24px 70px rgba(35,29,72,.10); }
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:94px}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    button,input,select{font:inherit}
+    button{cursor:pointer}
+    button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #9e90ff;outline-offset:3px}
+    .container{width:min(1180px,calc(100% - 48px));margin:auto}
+    .topbar{background:#161620;color:#d8d8ed;font-size:12px;text-align:center;padding:9px 15px;letter-spacing:.015em}
+    .topbar strong{color:#dafa85}
+    .site-header{position:sticky;top:0;z-index:50;background:rgba(250,249,247,.92);border-bottom:1px solid rgba(227,224,232,.8);backdrop-filter:blur(18px)}
+    .header-row{height:78px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+    .logo{display:inline-flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.065em;font-size:27px;white-space:nowrap}
+    .brand-mark{height:33px;width:33px;display:grid;place-items:center;background:var(--violet);color:white;border-radius:10px;transform:rotate(-8deg);font-size:21px;line-height:1}
+    .brand-mark span{transform:rotate(8deg)}
+    .logo small{font-size:10px;letter-spacing:.03em;display:block;color:#898898;font-weight:700;margin-top:-5px}
+    .nav{display:flex;align-items:center;gap:28px;color:#595969;font-size:13px;font-weight:750}
+    .nav a:hover{color:var(--violet)}
+    .btn{min-height:51px;border:0;border-radius:15px;display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:800;font-size:13px;padding:0 23px;white-space:nowrap;transition:transform .2s,box-shadow .2s,background .2s;text-align:center}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--violet);color:white;box-shadow:0 9px 25px rgba(102,87,233,.19)}
+    .btn-primary:hover{background:var(--violet-dark);box-shadow:0 12px 29px rgba(102,87,233,.27)}
+    .btn-dark{background:#171824;color:white}
+    .btn-light{background:white;border:1px solid #e4e1ec;color:var(--ink)}
+    .btn-lime{background:var(--lime);color:#171824}
+    .btn-arrow{font-size:19px;line-height:1;margin-top:-1px}
+    .menu-toggle{display:none;background:transparent;border:1px solid #e2e0e9;border-radius:13px;width:44px;height:44px;font-size:23px}
+    .hero{position:relative;overflow:hidden;padding:95px 0 96px;background:radial-gradient(circle at 73% 22%,#eeebff 0,rgba(238,235,255,0) 38%),linear-gradient(140deg,#fff 0%,#faf9f7 65%)}
+    .hero::before{content:"";position:absolute;width:620px;height:620px;top:-330px;right:-260px;border:1px solid #e6e3f5;border-radius:50%;box-shadow:0 0 0 95px rgba(219,215,245,.16),0 0 0 190px rgba(219,215,245,.09);pointer-events:none}
+    .hero-grid{display:grid;grid-template-columns:1.03fr .97fr;gap:70px;align-items:center;position:relative}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:12px;font-weight:800;letter-spacing:.01em;border:1px solid #e5e1f8;color:#4e46a3;border-radius:99px;padding:10px 15px;background:#f3f0ff}
+    .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--violet)}
+    h1,h2,h3,p{margin-top:0}
+    h1{font-size:clamp(44px,5.15vw,72px);letter-spacing:-.082em;line-height:1.08;font-weight:800;margin:25px 0}
+    .hero h1 em{font-style:normal;color:var(--violet)}
+    .hero-copy{font-size:16px;line-height:1.82;color:#626372;max-width:515px;margin-bottom:28px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:25px}
+    .small-note{display:flex;align-items:center;gap:9px;color:#848491;font-size:12px;line-height:1.5}
+    .small-note .icon-check{height:19px;width:19px;flex:none;border-radius:50%;background:#e5f7cd;display:grid;place-items:center;color:#5b852b;font-weight:800;font-size:12px}
+    .visual{position:relative;min-height:465px;display:flex;align-items:center;justify-content:center}
+    .visual-glow{width:390px;height:390px;position:absolute;border-radius:50%;background:#ded9ff;filter:blur(62px);opacity:.55}
+    .dashboard{position:relative;z-index:1;background:#fff;border:1px solid #eeeaf7;width:min(100%,468px);border-radius:30px;padding:27px;box-shadow:0 32px 90px rgba(43,29,108,.16);transform:rotate(2deg)}
+    .dash-header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .dash-title{font-size:13px;color:#838391;font-weight:750}
+    .dash-tag{background:#e8f7d0;border-radius:99px;color:#4d7426;font-size:11px;padding:7px 10px;font-weight:800}
+    .dash-sub{color:#8f8f9c;font-size:11px;margin-top:22px;font-weight:700}
+    .salary-main{font-size:clamp(37px,4vw,53px);font-weight:800;letter-spacing:-.068em;line-height:1.25;margin:4px 0 17px}
+    .salary-main span{font-size:23px;color:#858593;letter-spacing:-.04em}
+    .dash-card{background:#f7f5ff;border:1px solid #f0edff;border-radius:19px;padding:17px;margin-bottom:16px}
+    .dash-card-top{display:flex;justify-content:space-between;align-items:center;color:#636378;font-size:12px;font-weight:700;margin-bottom:12px}
+    .dash-card-top strong{color:#4e3fd9;font-size:14px}
+    input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:7px;border-radius:99px;background:linear-gradient(to right,var(--violet) 0%,var(--violet) var(--filled,50%),#ded9f5 var(--filled,50%),#ded9f5 100%);outline-offset:5px;cursor:pointer}
+    input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:21px;height:21px;border:4px solid white;background:var(--violet);border-radius:50%;box-shadow:0 2px 10px #aaa3d4}
+    input[type=range]::-moz-range-thumb{width:14px;height:14px;border:4px solid #fff;background:var(--violet);border-radius:50%;box-shadow:0 2px 10px #aaa3d4}
+    .number-field{display:flex;align-items:center;gap:8px;margin-top:8px}
+    .number-field input{width:100%;border:1px solid #e6e3ee;background:#fff;padding:11px 13px;border-radius:12px;color:#242432;font-size:17px;font-weight:800;outline:none}
+    .number-field input:focus{border-color:var(--violet)}
+    .number-field span{font-weight:700;color:#898895}
+    .dash-bottom{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .metric{border:1px solid #eeeef2;border-radius:16px;padding:15px}
+    .metric-label{font-size:11px;color:#848494;display:block;margin-bottom:6px}
+    .metric strong{display:block;font-size:20px;letter-spacing:-.055em}
+    .metric.positive strong{color:#409251}
+    .dash-foot{font-size:10px;color:#9b9aa8;line-height:1.6;margin:12px 1px 0}
+    .float-pill{position:absolute;z-index:3;background:#181824;color:#fff;padding:14px 17px;border-radius:16px;box-shadow:0 15px 35px rgba(23,23,40,.18);font-size:12px;line-height:1.4;font-weight:800;transform:rotate(-7deg);bottom:5px;left:-10px}
+    .float-pill span{display:block;color:var(--lime);font-size:10px;letter-spacing:.04em;margin-bottom:3px}
+    .mini-star{position:absolute;z-index:2;top:1px;right:-7px;width:66px;height:66px;display:grid;place-items:center;background:var(--lime);border-radius:18px;transform:rotate(15deg);font-size:31px;box-shadow:0 10px 30px rgba(50,59,10,.10)}
+    .trust{border-top:1px solid #efedf1;border-bottom:1px solid #efedf1;background:white}
+    .trust-row{display:grid;grid-template-columns:repeat(3,1fr);min-height:108px;align-items:center}
+    .trust-item{display:flex;gap:13px;align-items:center;justify-content:center;padding:19px;border-right:1px solid #eeedf1}
+    .trust-item:last-child{border-right:0}
+    .trust-icon{width:36px;height:36px;border-radius:12px;background:#f1effe;color:#6657e9;display:grid;place-items:center;font-size:18px;font-weight:800}
+    .trust-item strong{display:block;font-size:14px;letter-spacing:-.02em}
+    .trust-item span{font-size:11px;color:#858492}
+    section.content-section{padding:110px 0}
+    .section-header{max-width:740px;margin:0 auto 46px;text-align:center}
+    .section-kicker{text-transform:uppercase;font-size:11px;letter-spacing:.17em;color:var(--violet);font-weight:800;margin-bottom:13px}
+    h2{font-size:clamp(31px,4vw,49px);line-height:1.14;letter-spacing:-.065em;margin:0 0 19px}
+    .section-header p{color:var(--muted);font-size:15px;line-height:1.8}
+    .pain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .pain{background:#fff;border:1px solid var(--line);border-radius:23px;padding:32px 28px;min-height:230px;transition:transform .2s,box-shadow .2s}
+    .pain:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+    .pain .emoji{font-size:34px;margin-bottom:25px;display:block}
+    .pain h3{font-size:19px;letter-spacing:-.04em;margin:0 0 11px}
+    .pain p{color:#777788;font-size:13px;line-height:1.8;margin:0}
+    .audience{background:#171724;color:white;overflow:hidden}
+    .audience-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:80px;align-items:center}
+    .audience .section-kicker{color:var(--lime)}
+    .audience h2{max-width:490px}
+    .audience p{color:#b2b1c1;line-height:1.83;font-size:15px}
+    .audience-card{background:#252536;border:1px solid #393847;border-radius:27px;padding:30px;position:relative}
+    .audience-card:after{content:"✳";position:absolute;right:-19px;top:-38px;color:var(--lime);font-size:74px}
+    .audience-card h3{font-size:16px;margin-bottom:20px;color:#e0ddec}
+    .audience-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .audience-item{background:#323244;border:1px solid #424254;padding:13px 14px;border-radius:12px;font-size:12px;font-weight:700}
+    .audience-item:before{content:"↗";color:var(--lime);font-size:15px;margin-right:8px}
+    .audience-note{font-size:11px;color:#9f9eaf;margin-top:18px;line-height:1.7}
+    .steps{background:#fff}
+    .steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .step{position:relative;background:#f7f6f9;border-radius:22px;padding:29px 23px 34px;min-height:257px;border:1px solid #efedf3}
+    .step-number{width:42px;height:42px;border-radius:14px;background:var(--violet);color:#fff;display:grid;place-items:center;font-weight:800;font-size:13px;margin-bottom:42px}
+    .step:not(:last-child):after{content:"→";position:absolute;right:-19px;top:43px;z-index:2;color:var(--violet);font-size:25px;background:#fff;border-radius:50%;width:33px;height:33px;display:grid;place-items:center}
+    .step h3{font-size:17px;letter-spacing:-.04em;margin-bottom:10px}
+    .step p{font-size:12px;color:#777787;line-height:1.75;margin:0}
+    .pricing{background:#f2f0ff}
+    .pricing-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:20px;align-items:stretch;max-width:960px;margin:auto}
+    .price-card{border-radius:27px;background:white;padding:34px;border:1px solid #e9e5fc;display:flex;flex-direction:column;gap:0}
+    .price-card.featured{background:#211e35;color:#fff;border-color:#211e35;box-shadow:0 27px 60px rgba(45,32,113,.18);position:relative}
+    .price-tag{font-size:11px;letter-spacing:.07em;text-transform:uppercase;font-weight:800;color:#7a6ce9;margin-bottom:18px}
+    .featured .price-tag{color:var(--lime)}
+    .price-card h3{font-size:24px;letter-spacing:-.06em;margin:0 0 9px}
+    .price-desc{font-size:13px;color:#858293;line-height:1.75;min-height:56px}
+    .featured .price-desc{color:#c6c1d3}
+    .price{font-size:37px;font-weight:800;letter-spacing:-.055em;margin:18px 0 5px;line-height:1.15}
+    .price sup{font-size:18px;top:0;position:relative}
+    .price-caption{color:#9692a6;font-size:11px;min-height:35px;line-height:1.5}
+    .featured .price-caption{color:#bfb9ce}
+    .price-card ul{list-style:none;padding:0;margin:20px 0 27px;display:grid;gap:14px;flex:1}
+    .price-card li{font-size:13px;line-height:1.6;display:flex;gap:10px;align-items:baseline}
+    .price-card li:before{content:"✓";color:var(--violet);font-weight:800}
+    .featured li:before{color:var(--lime)}
+    .featured-ribbon{position:absolute;right:27px;top:28px;background:var(--lime);color:#242334;padding:6px 11px;border-radius:99px;font-size:10px;font-weight:800}
+    .diagnosis-banner{max-width:960px;margin:0 auto 23px;padding:24px 28px;border-radius:23px;background:#fff;border:1px solid #dbd6fa;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .diagnosis-banner h3{font-size:20px;letter-spacing:-.045em;margin:6px 0}
+    .diagnosis-banner p{color:#6d6b7f;font-size:12px;line-height:1.7;margin:0;max-width:580px}
+    .diagnosis-banner .btn{flex:none}
+    @media(max-width:760px){.diagnosis-banner{flex-direction:column;align-items:stretch;padding:24px}.diagnosis-banner .btn{width:100%}}
+    .pricing-notes{max-width:950px;text-align:center;margin:24px auto 0;color:#77718d;font-size:12px;line-height:1.85}
+    .faq{background:#fff}
+    .faq-list{max-width:810px;margin:0 auto;display:grid;gap:11px}
+    details{background:#faf9fb;border:1px solid #eae8ef;border-radius:16px;padding:0 21px}
+    summary{cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:15px;font-size:14px;font-weight:800;min-height:70px;list-style:none}
+    summary::-webkit-details-marker{display:none}
+    summary::after{content:"+";flex:none;color:var(--violet);font-size:26px;line-height:1;font-weight:500;transition:transform .2s}
+    details[open] summary::after{transform:rotate(45deg)}
+    details p{font-size:13px;color:#6c6d7e;line-height:1.85;padding:0 15px 22px 0;margin:0}
+    .cta-section{background:#171724;padding:90px 0 104px;color:#fff;position:relative;overflow:hidden}
+    .cta-section:before{content:"";position:absolute;width:520px;height:520px;right:-160px;top:-220px;border-radius:50%;background:#4d3fac;filter:blur(80px);opacity:.45}
+    .cta-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:65px;align-items:center;position:relative;z-index:1}
+    .cta-left .section-kicker{color:var(--lime)}
+    .cta-left h2{font-size:clamp(35px,4.3vw,54px)}
+    .cta-left p{color:#b5b3c4;font-size:14px;line-height:1.8;max-width:390px}
+    .cta-advantages{display:grid;gap:14px;margin-top:32px}
+    .cta-advantages span{font-size:12px;color:#d8d6e4;display:flex;gap:11px;align-items:center}
+    .cta-advantages span:before{content:"✓";width:23px;height:23px;border-radius:50%;background:#383a36;color:var(--lime);display:grid;place-items:center;font-weight:800}
+    .lead-form{background:#fff;color:var(--ink);border-radius:26px;padding:35px;box-shadow:0 18px 70px rgba(0,0,0,.14)}
+    .lead-form h3{font-size:22px;letter-spacing:-.055em;margin-bottom:8px}
+    .form-intro{font-size:12px;line-height:1.65;color:#888695;margin-bottom:25px}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+    .field{display:flex;flex-direction:column;gap:7px;min-width:0}
+    .field.full{grid-column:1/-1}
+    .field label{font-size:11px;font-weight:800;color:#676678}
+    .field input,.field select{width:100%;padding:14px 14px;border:1px solid #e6e3ee;border-radius:12px;outline:none;background:#fbfafc;color:#20202d;font-size:13px;min-height:49px}
+    .field input:focus,.field select:focus{border-color:var(--violet);background:#fff}
+    .form-consent{display:flex;align-items:flex-start;gap:10px;margin:19px 0}
+    .form-consent input{accent-color:var(--violet);width:17px;height:17px;flex:none;margin-top:2px}
+    .form-consent span{font-size:10px;color:#777688;line-height:1.65}
+    .form-consent a{text-decoration:underline}
+    .submit{width:100%}
+    .form-status{font-size:12px;line-height:1.6;margin-top:13px;min-height:17px;color:#4e46a3}
+    .form-status.error{color:#b94040}
+    .privacy-block{display:none;border:1px solid #eae7f1;border-radius:14px;padding:17px;background:#fbfafc;margin-top:12px;color:#676678;font-size:11px;line-height:1.7}
+    .privacy-block.open{display:block}
+    .privacy-block h4{margin:0 0 8px;color:#232331;font-size:12px}
+    footer{background:#101019;color:#9695a6;padding:34px 0 41px}
+    .footer-top{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    .footer-top .logo{color:#fff;font-size:22px}
+    .footer-top .brand-mark{height:30px;width:30px;font-size:18px}
+    .footer-links{display:flex;flex-wrap:wrap;gap:22px;font-size:12px}
+    .footer-links a:hover{color:#fff}
+    .footer-bottom{border-top:1px solid #2d2b37;margin-top:25px;padding-top:18px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:10px;line-height:1.7}
+    .mobile-cta{display:none}
+    @media(max-width:990px){.hero-grid{gap:30px}.visual{min-height:400px}.dashboard{padding:21px}.hero{padding:67px 0 78px}.audience-grid{gap:34px}.steps-grid{grid-template-columns:repeat(2,1fr)}.step:nth-child(2):after{display:none}.step{min-height:215px}.cta-grid{gap:30px}.pain{padding:24px 20px}.nav{gap:15px}}
+    @media(max-width:760px){.container{width:min(100% - 36px,550px)}.topbar{font-size:10px}.header-row{height:67px}.logo{font-size:23px}.nav{display:none;position:absolute;left:0;right:0;top:100%;background:white;padding:18px 24px 22px;box-shadow:0 16px 20px rgba(0,0,0,.08);flex-direction:column;align-items:stretch;font-size:14px}.nav.open{display:flex}.header-row>.btn{display:none}.menu-toggle{display:block}.hero{padding:46px 0 72px}.hero-grid,.audience-grid,.cta-grid{grid-template-columns:1fr;gap:36px}.hero h1{font-size:clamp(43px,11vw,65px);margin:20px 0}.hero-copy{font-size:14px;line-height:1.8}.hero-actions .btn{flex:1}.visual{min-height:400px;margin-top:5px}.dashboard{max-width:410px;transform:rotate(1.1deg)}.mini-star{right:2px}.float-pill{left:0}.trust-row{grid-template-columns:1fr 1fr;min-height:0;padding:12px 0}.trust-item{justify-content:flex-start;border:0;padding:10px 3px}.trust-item:last-child{grid-column:1/-1}.trust-item strong{font-size:12px}.trust-item span{font-size:10px}.trust-icon{width:31px;height:31px;flex:none}.content-section{padding:75px 0!important}.section-header{margin-bottom:31px}.section-header p{font-size:13px}.pain-grid{grid-template-columns:1fr;gap:11px}.pain{min-height:0;padding:24px}.pain .emoji{margin-bottom:12px;font-size:29px}.audience-card{padding:22px}.steps-grid{gap:10px}.step{padding:22px 18px;min-height:210px}.step:not(:last-child):after{display:none}.step-number{margin-bottom:28px}.step h3{font-size:15px}.pricing-grid{grid-template-columns:1fr;max-width:480px}.price-card{padding:27px}.cta-section{padding:75px 0 90px}.lead-form{padding:24px}.footer-bottom{display:block}.mobile-cta{display:block;position:fixed;z-index:44;bottom:0;left:0;right:0;padding:12px 18px calc(12px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid #e8e5ef;backdrop-filter:blur(12px)}.mobile-cta .btn{width:100%;min-height:46px}body{padding-bottom:67px}}
+    @media(max-width:410px){.hero-actions{flex-direction:column}.visual{min-height:370px}.dashboard{padding:17px}.dashboard .salary-main{font-size:38px}.mini-star{width:51px;height:51px;font-size:25px;top:-10px}.float-pill{font-size:10px;bottom:-7px}.audience-list{grid-template-columns:1fr}.steps-grid{grid-template-columns:1fr}.step{min-height:0}.step-number{margin-bottom:20px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:1}.btn{white-space:normal}.trust-item strong{font-size:11px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+  </style>
+</head>
+<body>
+  <div class="topbar">Для молодых специалистов Казахстана <strong>· 1–5 лет опыта ·</strong> онлайн по всей стране</div>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="logo" href="#top" aria-label="UPSHIFT — на главную"><span class="brand-mark"><span>↗</span></span><span>UPSHIFT<small>КАРЬЕРНЫЙ РОСТ</small></span></a>
+      <nav id="site-nav" class="nav" aria-label="Основная навигация"><a href="#why">Для кого</a><a href="#process">Как работаем</a><a href="#pricing">Стоимость</a><a href="#faq">Вопросы</a></nav>
+      <a class="btn btn-primary" href="#apply">Бесплатная диагностика <span class="btn-arrow">↗</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">☰</button>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow"><span class="dot"></span> Твой следующий карьерный уровень</span>
+          <h1 id="hero-title">Ты уже вырос.<br><em>А зарплата — нет?</em></h1>
+          <p class="hero-copy">Не обязательно ждать повышения годами. Поможем понять, сколько стоят твои навыки, усилить резюме и выйти на работодателей с более интересными предложениями.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#apply">Узнать свой потенциал <span class="btn-arrow">↗</span></a><a class="btn btn-light" href="#process">Как это работает <span class="btn-arrow">↓</span></a></div>
+          <div class="small-note"><span class="icon-check">✓</span> Первая диагностика бесплатно. Без обещаний гарантированного оффера.</div>
+        </div>
+        <div class="visual" aria-label="Интерактивный пример расчёта роста зарплаты">
+          <div class="visual-glow" aria-hidden="true"></div>
+          <div class="mini-star" aria-hidden="true">✳</div>
+          <div class="dashboard">
+            <div class="dash-header"><span class="dash-title">Твой потенциал роста</span><span class="dash-tag">↗ Сценарий</span></div>
+            <div class="dash-sub">Новая зарплата при выбранном росте</div>
+            <div class="salary-main" id="new-salary" aria-live="polite">525 000 <span>₸ / мес.</span></div>
+            <div class="dash-card">
+              <div class="dash-card-top"><span>Предполагаемый рост</span><strong id="growth-label">+50%</strong></div>
+              <input id="growth" type="range" min="10" max="80" step="5" value="50" aria-label="Предполагаемый процент роста зарплаты" style="--filled:57.14%" />
+            </div>
+            <div class="dash-bottom">
+              <div class="metric"><span class="metric-label">Текущая зарплата</span><div class="number-field"><input id="current-salary" inputmode="numeric" type="number" min="100000" max="5000000" step="10000" value="350000" aria-label="Текущая зарплата в тенге" /><span>₸</span></div></div>
+              <div class="metric positive"><span class="metric-label">Дополнительно за год</span><strong id="annual-growth">+2,1 млн ₸</strong></div>
+            </div>
+            <p class="dash-foot">Это пример расчёта, а не прогноз или гарантия. Реальные предложения зависят от опыта, профессии и рынка.</p>
+          </div>
+          <div class="float-pill"><span>LEVEL UP</span> Не просто искать работу.<br> Расти в доходе. 🚀</div>
+        </div>
+      </div>
+    </section>
+    <div class="trust"><div class="container trust-row"><div class="trust-item"><div class="trust-icon">01</div><div><strong>Личная стратегия</strong><span>Не массовая рассылка резюме</span></div></div><div class="trust-item"><div class="trust-icon">90</div><div><strong>До 90 дней</strong><span>Активного сопровождения</span></div></div><div class="trust-item"><div class="trust-icon">↗</div><div><strong>Оплата за результат</strong><span>По условиям договора</span></div></div></div></div>
+    <section class="content-section" id="why"><div class="container">
+      <div class="section-header"><div class="section-kicker">Узнаёшь себя?</div><h2>Ты работаешь. Развиваешься.<br>Но что-то не сходится.</h2><p>Можно быть сильным специалистом и при этом не уметь продавать свои навыки на рынке труда. Это поправимо.</p></div>
+      <div class="pain-grid"><article class="pain"><span class="emoji">😮‍💨</span><h3>Ответственности больше, денег — нет</h3><p>Ты закрываешь сложные задачи, но повышение откладывают или предлагают символическое.</p></article><article class="pain"><span class="emoji">📭</span><h3>Откликаешься — тишина</h3><p>В резюме перечислены обязанности, а работодатели не видят твою реальную ценность.</p></article><article class="pain"><span class="emoji">🤔</span><h3>Не знаешь, сколько просить</h3><p>Сложно понять свою рыночную стоимость и уверенно обсуждать деньги на интервью.</p></article></div>
+    </div></section>
+    <section class="content-section audience" id="audience"><div class="container audience-grid"><div><div class="section-kicker">Кому мы помогаем</div><h2>У тебя уже есть опыт. Пора использовать его сильнее.</h2><p>Основной фокус — молодые специалисты с 1–5 годами опыта. Особенно там, где карьерный переход можно подкрепить конкретными навыками и результатами.</p><a class="btn btn-lime" href="#apply">Проверить мою ситуацию <span class="btn-arrow">↗</span></a></div><div class="audience-card"><h3>С какими направлениями работаем на старте</h3><div class="audience-list"><div class="audience-item">Финансы и аналитика</div><div class="audience-item">Банковская сфера</div><div class="audience-item">Проектный менеджмент</div><div class="audience-item">Закупки и операционные роли</div></div><p class="audience-note">Другая профессия? Можно оставить заявку — сначала оценим, есть ли у нас экспертиза и возможность помочь. Мы не берём на сопровождение всех подряд.</p></div></div></section>
+    <section class="content-section steps" id="process"><div class="container"><div class="section-header"><div class="section-kicker">Простой план</div><h2>От «мне мало платят»<br>к конкретным действиям</h2><p>Работаем не по принципу «разошлём сто резюме», а по индивидуальной стратегии.</p></div><div class="steps-grid"><article class="step"><div class="step-number">01</div><h3>Разбираем твой опыт</h3><p>Смотрим достижения, сильные стороны и реальные карьерные варианты.</p></article><article class="step"><div class="step-number">02</div><h3>Упаковываем навыки</h3><p>Делаем убедительное резюме и готовим ответы для интервью.</p></article><article class="step"><div class="step-number">03</div><h3>Ищем возможности</h3><p>Подбираем релевантные вакансии и согласовываем отклики с тобой.</p></article><article class="step"><div class="step-number">04</div><h3>Готовимся к офферу</h3><p>Разбираем собеседования и помогаем обсуждать условия работы.</p></article></div></div></section>
+    <section class="content-section pricing" id="pricing"><div class="container"><div class="section-header"><div class="section-kicker">Прозрачные условия</div><h2>Инвестируй в следующий<br>карьерный шаг</h2><p>Начать можно с отдельного аудита. Полное сопровождение — для тех, чей потенциал роста мы подтвердили предварительно.</p></div><div class="diagnosis-banner"><div><div class="price-tag" style="margin-bottom:4px">Первый шаг · бесплатно</div><h3>Диагностика — 0 ₸</h3><p>10–15 минут: узнаем опыт и зарплатную цель, предварительно оценим возможность роста и подскажем, есть ли смысл продолжать. Без письменного отчёта, подбора вакансий и доработки резюме.</p></div><a class="btn btn-primary" href="#apply" data-service="Бесплатная диагностика">Записаться бесплатно ↗</a></div><div class="pricing-grid">
+      <article class="price-card"><div class="price-tag">Подробный разбор с результатом</div><h3>Карьерный аудит</h3><div class="price-desc">Для тех, кто хочет получить документ с конкретной стратегией и искать работу самостоятельно.</div><div class="price">19 900 ₸</div><div class="price-caption">Разово · письменный результат за 3–5 рабочих дней</div><ul><li>30–45 минут углублённого интервью</li><li>Профессиональный разбор резюме и достижений</li><li>Сравнение зарплат по доступным предложениям</li><li>До 5 примеров релевантных вакансий при наличии</li><li>Письменный план действий на 2–3 страницы</li></ul><a class="btn btn-light" href="#apply" data-service="Карьерный аудит — 19 900 ₸">Заказать аудит <span class="btn-arrow">↗</span></a></article>
+      <article class="price-card featured"><span class="featured-ribbon">Популярный тариф</span><div class="price-tag">Поддержка до оффера</div><h3>Career Growth</h3><div class="price-desc">Полное сопровождение поиска следующей работы.</div><div class="price">29 900 ₸ <sup>+ success fee</sup></div><div class="price-caption">Success fee: 40% прироста одной месячной зарплаты, максимум 200 000 ₸, при росте от 20%</div><ul><li>Карьерная стратегия и сильное резюме</li><li>Подбор подходящих вакансий</li><li>Согласованные отклики и работа с HR</li><li>Подготовка к собеседованиям</li><li>Переговоры о зарплате</li><li>До 90 дней сопровождения</li></ul><a class="btn btn-lime" href="#apply" data-service="Career Growth — 29 900 ₸ + success fee">Проверить, подхожу ли я <span class="btn-arrow">↗</span></a></article>
+    </div><p class="pricing-notes">Бесплатная диагностика — предварительный разговор 10–15 минут без отчёта. Платный аудит включает углублённый разбор и письменный план действий. Success fee возникает только после трудоустройства через согласованный канал, получения первой полной месячной зарплаты и выполнения условий договора. Мы не гарантируем трудоустройство или конкретный процент повышения.</p></div></section>
+    <section class="content-section faq" id="faq"><div class="container"><div class="section-header"><div class="section-kicker">Частые вопросы</div><h2>Без мелкого шрифта<br>и пустых обещаний</h2></div><div class="faq-list">
+      <details><summary>Чем бесплатная диагностика отличается от аудита за 19 900 ₸?</summary><p>Бесплатно за 10–15 минут обсуждаем твой опыт, цель и возможность карьерного перехода — это предварительная оценка без документов. Платный аудит включает углублённый разговор, анализ резюме и вакансий, оценку зарплатных ориентиров и письменный план на 2–3 страницы за 3–5 рабочих дней. Аудит можно использовать самостоятельно, без покупки сопровождения.</p></details>
+      <details><summary>Вы гарантируете рост зарплаты на 50%?</summary><p>Нет. 30–50% — ориентир для отдельных карьерных переходов, а не обещание. На бесплатной диагностике мы проверяем, насколько такой рост реалистичен для твоей квалификации и рынка.</p></details>
+      <details><summary>Зачем платить, если вакансии доступны бесплатно?</summary><p>Ты платишь не за доступ к вакансиям. Наша работа — стратегия поиска, анализ твоей профессиональной ценности, резюме, подготовка к интервью и сопровождение переговоров.</p></details>
+      <details><summary>Когда оплачивается success fee?</summary><p>По модели Career Growth комиссия составляет 40% положительного прироста одной месячной фиксированной зарплаты, но не более 200 000 ₸. Она возникает при росте не менее 20% только при соблюдении условий договора, после выхода на работу и получения оплаты за первый полный месяц.</p></details>
+      <details><summary>Мой нынешний работодатель узнает о поиске?</summary><p>Мы не связываемся с текущим работодателем без твоего отдельного разрешения. Каждая передача резюме потенциальному работодателю согласовывается с тобой.</p></details>
+      <details><summary>Что, если я пока не хочу менять работу?</summary><p>Можно начать с карьерного аудита, чтобы понять рынок и подготовиться к переговорам о повышении в своей компании. Полное сопровождение лучше подходит тем, кто действительно рассматривает переход.</p></details>
+      <details><summary>Вы работаете только в Алматы?</summary><p>Стартуем из Алматы, но карьерные консультации и сопровождение могут проводиться онлайн по Казахстану. Доступные вакансии зависят от города, специальности и формата работы.</p></details>
+    </div></div></section>
+    <section class="cta-section" id="apply"><div class="container cta-grid"><div class="cta-left"><div class="section-kicker">Твоя следующая глава</div><h2>Узнай, сколько<br>может стоить<br>твой опыт.</h2><p>Ответь на несколько вопросов. Мы проведём первичную оценку и обсудим, есть ли смысл искать позицию с более высокой зарплатой.</p><div class="cta-advantages"><span>Бесплатная первичная диагностика</span><span>Без обязательства покупать сопровождение</span><span>Конфиденциальное обращение</span></div></div><form class="lead-form" id="lead-form"><h3>Начнём с твоей ситуации 👋</h3><p class="form-intro">Заполни форму — подготовим заявку для WhatsApp. Ты сам подтверждаешь её отправку.</p><div class="form-grid"><div class="field full"><label for="lead-service">Какая услуга интересует?</label><select id="lead-service" name="service" required><option>Бесплатная диагностика</option><option>Карьерный аудит — 19 900 ₸</option><option>Career Growth — 29 900 ₸ + success fee</option></select></div><div class="field full"><label for="lead-name">Как тебя зовут?</label><input id="lead-name" name="name" placeholder="Например, Алия" maxlength="70" autocomplete="given-name" required /></div><div class="field"><label for="lead-role">Чем занимаешься?</label><select id="lead-role" name="role" required><option value="" selected disabled>Выбери направление</option><option>Финансы / аналитика</option><option>Банк / кредитование</option><option>Проектный менеджмент</option><option>Закупки / операции</option><option>Другое</option></select></div><div class="field"><label for="lead-experience">Опыт работы</label><select id="lead-experience" name="experience" required><option value="" selected disabled>Выбери стаж</option><option>Меньше 1 года</option><option>1–2 года</option><option>3–5 лет</option><option>Больше 5 лет</option></select></div><div class="field"><label for="lead-current">Доход сейчас, ₸/мес.</label><select id="lead-current" name="salary" required><option value="" selected disabled>Примерный диапазон</option><option>До 250 000 ₸</option><option>250 000–400 000 ₸</option><option>400 000–600 000 ₸</option><option>600 000–900 000 ₸</option><option>Более 900 000 ₸</option><option>Не хочу указывать</option></select></div><div class="field"><label for="lead-goal">Чего хочешь достичь?</label><select id="lead-goal" name="goal" required><option value="" selected disabled>Выбери цель</option><option>Повысить зарплату на 20–30%</option><option>Повысить зарплату на 30–50%</option><option>Найти работу уровнем выше</option><option>Разобраться с карьерой</option></select></div></div><label class="form-consent"><input id="lead-consent" type="checkbox" required /><span>Согласен(на) подготовить сообщение с указанными сведениями для передачи через WhatsApp и ознакомился(лась) с <a href="#privacy" id="privacy-link">информацией об обработке данных</a>. Нажатие кнопки не отправляет форму автоматически.</span></label><button class="btn btn-primary submit" type="submit">Перейти к WhatsApp <span class="btn-arrow">↗</span></button><div id="form-status" class="form-status" role="status" aria-live="polite"></div><div id="privacy" class="privacy-block"><h4>Как используются данные</h4>Данные из формы используются только для составления текста заявки. Данные не сохраняются на сервере этого сайта: сообщение формируется на вашем устройстве и отправляется только после вашего подтверждения в WhatsApp. При переходе в WhatsApp информация передаётся через выбранный вами сервис согласно его правилам. Перед полноценным коммерческим запуском необходимо дополнить сведения об операторе персональных данных и политику конфиденциальности.</div></form></div></section>
+  </main>
+  <footer><div class="container"><div class="footer-top"><a class="logo" href="#top"><span class="brand-mark"><span>↗</span></span><span>UPSHIFT</span></a><div class="footer-links"><a href="#process">Как работаем</a><a href="#pricing">Тарифы</a><a href="#faq">Вопросы</a><a href="#apply">Оставить заявку</a></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> UPSHIFT · Алматы, Казахстан · Онлайн по РК</span><span>Связаться с нами: <a href="https://wa.me/77774877163" target="_blank" rel="noopener noreferrer">WhatsApp +7 777 487 71 63</a>. Сервис проходит пилотный запуск; юридические реквизиты уточняются.</span></div></div></footer>
+  <div class="mobile-cta"><a href="#apply" class="btn btn-primary">Бесплатная диагностика <span class="btn-arrow">↗</span></a></div>
+  <script>
+    'use strict';
+    // НАСТРОЙКА ПЕРЕД ПУБЛИКАЦИЕЙ: номер WhatsApp Business в международном формате, только цифры.
+    // Пример формата (не реальный контакт): '77001234567'
+    const WHATSAPP_NUMBER = '77774877163';
+    document.querySelectorAll('[data-service]').forEach(link=>link.addEventListener('click',()=>{ document.getElementById('lead-service').value=link.dataset.service; }));
+    const money = amount => Math.round(amount).toLocaleString('ru-RU');
+    const salaryInput = document.getElementById('current-salary');
+    const growthInput = document.getElementById('growth');
+    function renderSalary(){
+      const salary = Math.max(0, Math.min(5000000, Number(salaryInput.value) || 0));
+      const growth = Number(growthInput.value);
+      const next = Math.round(salary*(1+growth/100));
+      const year = salary*growth/100*12;
+      document.getElementById('new-salary').innerHTML = `${money(next)} <span>₸ / мес.</span>`;
+      document.getElementById('growth-label').textContent = `+${growth}%`;
+      document.getElementById('annual-growth').textContent = year>=1000000 ? `+${(year/1000000).toLocaleString('ru-RU',{maximumFractionDigits:2})} млн ₸` : `+${money(year)} ₸`;
+      growthInput.style.setProperty('--filled',`${(growth-10)/70*100}%`);
+    }
+    salaryInput.addEventListener('input',renderSalary);
+    growthInput.addEventListener('input',renderSalary);
+    renderSalary();
+    const menu = document.querySelector('.menu-toggle');
+    const nav = document.getElementById('site-nav');
+    menu.addEventListener('click',()=>{
+      const open = nav.classList.toggle('open');
+      menu.setAttribute('aria-expanded',String(open));
+      menu.textContent = open?'×':'☰';
+      menu.setAttribute('aria-label',open?'Закрыть меню':'Открыть меню');
+    });
+    nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰';}));
+    document.getElementById('privacy-link').addEventListener('click',e=>{e.preventDefault();document.getElementById('privacy').classList.toggle('open');});
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const form = document.getElementById('lead-form');
+    const status = document.getElementById('form-status');
+    form.addEventListener('submit', async e=>{
+      e.preventDefault();
+      if(!form.reportValidity())return;
+      const get = id=>document.getElementById(id).value.trim().replace(/[\r\n]+/g,' ');
+      const text = `Здравствуйте! Хочу бесплатную карьерную диагностику UPSHIFT.\n\nУслуга: ${get('lead-service')}\nИмя: ${get('lead-name')}\nНаправление: ${get('lead-role')}\nОпыт: ${get('lead-experience')}\nТекущий доход: ${get('lead-current')}\nЦель: ${get('lead-goal')}\n\nПодскажите, как записаться?`;
+      status.classList.remove('error');
+      if(/^\d{10,15}$/.test(WHATSAPP_NUMBER)){
+        const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+        window.open(url,'_blank','noopener,noreferrer');
+        status.textContent = 'Откроется WhatsApp. Отправь подготовленное сообщение, чтобы заявка поступила агентству.';
+      } else {
+        try{
+          await navigator.clipboard.writeText(text);
+          status.textContent = 'Демонстрационная версия: заявка скопирована. Перед публикацией владелец сайта должен указать номер WhatsApp в настройках.';
+        }catch(_){
+          status.textContent = 'Демонстрационная версия: номер WhatsApp ещё не настроен. Перед публикацией требуется добавить номер агентства.';
+          status.classList.add('error');
+        }
+      }
+    });
+  </script>
+</body>
+</html>
