@@ -235,6 +235,38 @@
     .expert-info .expert-note{font-size:12px;margin:0;color:#696779}
     @media(max-width:760px){.upgrade-note{flex-direction:column;align-items:flex-start;padding:22px}.roi-panel{padding:23px}.roi-layout,.expert-panel{grid-template-columns:1fr}.expert-years{padding:27px}.expert-info{padding:25px}.expert-tags{grid-template-columns:1fr}.roi-result .roi-highlight{font-size:24px}}
 
+  
+    /* UPSHIFT: Azamat story carousel */
+    .story-section{background:linear-gradient(180deg,#f6f2fc 0%,#faf9f7 100%);padding-top:84px;padding-bottom:86px}
+    .story-section .section-header{max-width:810px}
+    .story-section .section-header p{max-width:640px}
+    .story-layout{display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:clamp(28px,5vw,78px);align-items:center;max-width:1060px;margin:0 auto}
+    .story-frame{min-width:0;padding:13px;border:1px solid #e6dff5;background:#fff;border-radius:25px;box-shadow:0 30px 80px rgba(68,46,104,.11)}
+    .story-viewport{display:flex;overflow-x:auto;gap:0;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;border-radius:17px;outline-offset:4px;overscroll-behavior-inline:contain}
+    .story-viewport::-webkit-scrollbar{display:none}
+    .story-slide{margin:0;flex:0 0 100%;min-width:0;scroll-snap-align:start;scroll-snap-stop:always;background:#e8deeb}
+    .story-slide img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+    .story-controls{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:14px 3px 1px}
+    .story-arrow{flex:0 0 auto;display:grid;place-items:center;width:37px;height:37px;border:1px solid #ded6ed;border-radius:50%;background:#fff;color:#3b3056;font-size:25px;line-height:1;transition:background .2s}
+    .story-arrow:hover:not(:disabled){background:#ede7fa}
+    .story-arrow:disabled{opacity:.36;cursor:not-allowed}
+    .story-dots{display:flex;align-items:center;justify-content:center;gap:8px}
+    .story-dot{height:9px;width:9px;border:0;border-radius:12px;background:#d4cbdc;padding:0;transition:width .2s,background .2s}
+    .story-dot[aria-current="true"]{width:25px;background:#6657e9}
+    .story-position{font-size:12px;min-width:37px;text-align:center;font-weight:750;color:#6c647a;font-variant-numeric:tabular-nums}
+    .story-copy{max-width:505px}
+    .story-kicker{font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:850;color:#6b59db;margin-bottom:13px}
+    .story-copy h3{font-size:clamp(27px,3vw,40px);line-height:1.13;letter-spacing:-.05em;margin:0 0 21px;color:#22203b}
+    .story-copy p{font-size:15px;line-height:1.85;color:#5b586b;margin:0 0 14px}
+    .story-math{background:white;border:1px solid #ece4f6;border-radius:17px;padding:17px 19px;margin:22px 0;display:flex;flex-wrap:wrap;gap:9px;align-items:center;justify-content:space-between}
+    .story-math strong{display:block;color:#4d3ac2;font-size:25px;line-height:1.2;letter-spacing:-.04em}
+    .story-math span{font-size:12px;color:#6c667a;line-height:1.45}
+    .story-copy .story-disclaimer{font-size:11px;line-height:1.65;color:#777184;margin:17px 0 22px}
+    .story-copy .btn{max-width:100%;text-align:center}
+    @media(max-width:800px){.story-section{padding-top:65px;padding-bottom:68px}.story-layout{grid-template-columns:1fr;max-width:590px;gap:26px}.story-frame{width:min(100%,490px);margin:0 auto}.story-copy{max-width:590px}.story-copy h3{font-size:29px}}
+    @media(max-width:480px){.story-frame{padding:8px;border-radius:17px}.story-viewport{border-radius:11px}.story-section .section-header h2{font-size:30px}.story-controls{padding-top:11px}.story-copy h3{font-size:28px}.story-math{padding:15px}.story-math strong{font-size:23px}}
+    @media(prefers-reduced-motion:reduce){.story-viewport{scroll-behavior:auto}.story-dot,.story-arrow{transition:none}}
+
   </style>
 </head>
 <body>
@@ -283,6 +315,46 @@
       <div class="section-header"><div class="section-kicker">Узнаёшь себя?</div><h2>Ты работаешь. Развиваешься.<br>Но что-то не сходится.</h2><p>Можно быть сильным специалистом и при этом не уметь продавать свои навыки на рынке труда. Это поправимо.</p></div>
       <div class="pain-grid"><article class="pain"><span class="emoji">😮‍💨</span><h3>Ответственности больше, денег — нет</h3><p>Ты закрываешь сложные задачи, но повышение откладывают или предлагают символическое.</p></article><article class="pain"><span class="emoji">📭</span><h3>Откликаешься — тишина</h3><p>В резюме перечислены обязанности, а работодатели не видят твою реальную ценность.</p></article><article class="pain"><span class="emoji">🤔</span><h3>Не знаешь, сколько просить</h3><p>Сложно понять свою рыночную стоимость и уверенно обсуждать деньги на интервью.</p></article></div>
     </div></section>
+
+    <section class="content-section story-section" id="story-azamat" aria-labelledby="story-azamat-title">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">История, в которой можно узнать себя</div>
+          <h2 id="story-azamat-title">Три года опыта. А на мечту всё ещё не хватает.</h2>
+          <p>Знакомься, это Азамат. У него семья, работа и мечта встретить Новый год за границей. Но почти весь доход уходит на повседневные расходы.</p>
+        </div>
+        <div class="story-layout">
+          <div class="story-frame">
+            <div class="story-viewport" id="azamat-carousel" role="region" aria-roledescription="карусель" aria-label="История Азамата: четыре слайда" tabindex="0">
+              <figure class="story-slide"><img src="assets/azamat-01.webp" width="720" height="900" loading="lazy" decoding="async" alt="Азамат с супругой и дочерью мечтают встретить Новый год за границей. Первый слайд из четырёх."></figure>
+              <figure class="story-slide"><img src="assets/azamat-02.webp" width="720" height="900" loading="lazy" decoding="async" alt="Семья обсуждает расходы: аренда, питание и кредиты почти полностью поглощают зарплату. Второй слайд из четырёх."></figure>
+              <figure class="story-slide"><img src="assets/azamat-03.webp" width="720" height="900" loading="lazy" decoding="async" alt="Азамат изучает карьерные возможности на сайте UPSHIFT. На рисунке показан пример потенциального роста дохода. Третий слайд из четырёх."></figure>
+              <figure class="story-slide"><img src="assets/azamat-04.webp" width="720" height="900" loading="lazy" decoding="async" alt="Азамат с семьёй в аэропорту мечтают о путешествии. UPSHIFT предлагает карьерный аудит и сопровождение. Четвёртый слайд из четырёх."></figure>
+            </div>
+            <div class="story-controls" aria-label="Управление историей">
+              <button type="button" class="story-arrow" data-story-prev aria-label="Предыдущий слайд" disabled>‹</button>
+              <div class="story-dots" role="group" aria-label="Выбрать слайд">
+                <button type="button" class="story-dot" data-story-index="0" aria-label="Слайд 1" aria-current="true"></button>
+                <button type="button" class="story-dot" data-story-index="1" aria-label="Слайд 2" aria-current="false"></button>
+                <button type="button" class="story-dot" data-story-index="2" aria-label="Слайд 3" aria-current="false"></button>
+                <button type="button" class="story-dot" data-story-index="3" aria-label="Слайд 4" aria-current="false"></button>
+              </div>
+              <span class="story-position" id="story-position" aria-live="polite">1 / 4</span>
+              <button type="button" class="story-arrow" data-story-next aria-label="Следующий слайд">›</button>
+            </div>
+          </div>
+          <div class="story-copy">
+            <div class="story-kicker">Знакомая ситуация?</div>
+            <h3>Иногда дело не в том, сколько ты экономишь. А в том, сколько стоит твой опыт.</h3>
+            <p>Азамат работает аналитиком уже три года. Он не хочет брать новый кредит ради поездки с семьёй. Но и ждать, пока зарплата сама вырастет, — не единственный вариант.</p>
+            <p>Карьерный аудит помогает разобраться, какие позиции подходят под твой опыт, как представить достижения и подготовиться к переходу на более высокий уровень дохода.</p>
+            <div class="story-math"><div><strong>+2 040 000 ₸</strong><span>Пример за 12 месяцев при росте зарплаты на 170 000 ₸ в месяц</span></div></div>
+            <a class="btn btn-primary" href="#pricing">Посмотреть услуги UPSHIFT <span class="btn-arrow">↗</span></a>
+            <p class="story-disclaimer">История и персонажи вымышлены, изображения созданы с помощью ИИ. Суммы — условный расчётный пример, а не фактический результат клиента. Доход и трудоустройство не гарантируются; экран сайта в иллюстрации может отличаться от действующей версии.</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="content-section audience" id="audience"><div class="container audience-grid"><div><div class="section-kicker">Кому мы помогаем</div><h2>У тебя уже есть опыт. Пора использовать его сильнее.</h2><p>Основной фокус — молодые специалисты с 1–5 годами опыта. Особенно там, где карьерный переход можно подкрепить конкретными навыками и результатами.</p><a class="btn btn-lime" href="#apply">Проверить мою ситуацию <span class="btn-arrow">↗</span></a></div><div class="audience-card"><h3>С какими направлениями работаем на старте</h3><div class="audience-list"><div class="audience-item">Финансы и аналитика</div><div class="audience-item">Банковская сфера</div><div class="audience-item">Проектный менеджмент</div><div class="audience-item">Закупки и операционные роли</div></div><p class="audience-note">Другая профессия? Можно оставить заявку — сначала оценим, есть ли у нас экспертиза и возможность помочь. Мы не берём на сопровождение всех подряд.</p></div></div></section>
     <section class="content-section steps" id="process"><div class="container"><div class="section-header"><div class="section-kicker">Простой план</div><h2>От «мне мало платят»<br>к конкретным действиям</h2><p>Работаем не по принципу «разошлём сто резюме», а по индивидуальной стратегии.</p></div><div class="steps-grid"><article class="step"><div class="step-number">01</div><h3>Разбираем твой опыт</h3><p>Смотрим достижения, сильные стороны и реальные карьерные варианты.</p></article><article class="step"><div class="step-number">02</div><h3>Упаковываем навыки</h3><p>Делаем убедительное резюме и готовим ответы для интервью.</p></article><article class="step"><div class="step-number">03</div><h3>Ищем возможности</h3><p>Подбираем релевантные вакансии и согласовываем отклики с тобой.</p></article><article class="step"><div class="step-number">04</div><h3>Готовимся к офферу</h3><p>Разбираем собеседования и помогаем обсуждать условия работы.</p></article></div></div></section>
     <section class="content-section expert-section" id="expert"><div class="container">
@@ -402,5 +474,49 @@
       }
     });
   </script>
+
+  <script>
+    (() => {
+      const viewport=document.getElementById('azamat-carousel');
+      if(!viewport)return;
+      const slides=Array.from(viewport.querySelectorAll('.story-slide'));
+      const dots=Array.from(document.querySelectorAll('#story-azamat .story-dot'));
+      const prev=document.querySelector('#story-azamat [data-story-prev]');
+      const next=document.querySelector('#story-azamat [data-story-next]');
+      const count=document.getElementById('story-position');
+      let active=0;
+      function setActive(index){
+        active=Math.max(0,Math.min(slides.length-1,index));
+        dots.forEach((b,i)=>b.setAttribute('aria-current',i===active?'true':'false'));
+        prev.disabled=active===0;
+        next.disabled=active===slides.length-1;
+        count.textContent=(active+1)+' / '+slides.length;
+      }
+      function go(index){
+        const n=Math.max(0,Math.min(slides.length-1,index));
+        viewport.scrollTo({left:slides[n].offsetLeft-slides[0].offsetLeft,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+        setActive(n);
+      }
+      prev.addEventListener('click',()=>go(active-1));
+      next.addEventListener('click',()=>go(active+1));
+      dots.forEach((b,i)=>b.addEventListener('click',()=>go(i)));
+      let frame=false;
+      viewport.addEventListener('scroll',()=>{
+        if(frame)return;
+        frame=true;
+        requestAnimationFrame(()=>{
+          const step=slides[1]?.offsetLeft-slides[0]?.offsetLeft||viewport.clientWidth;
+          setActive(Math.round(viewport.scrollLeft/step));
+          frame=false;
+        });
+      },{passive:true});
+      viewport.addEventListener('keydown',e=>{
+        if(e.key==='ArrowRight'){e.preventDefault();go(active+1)}
+        if(e.key==='ArrowLeft'){e.preventDefault();go(active-1)}
+      });
+      setActive(0);
+    })();
+  </script>
+
 </body>
 </html>
